@@ -20,7 +20,7 @@ class email_val(Resource):
         domain = str(splitAddress[1])
 
         if domain=='yahoo.com':
-            return yahoo_check(email=to_address)
+            return "lol"
 
         else:
             # MX record lookup
