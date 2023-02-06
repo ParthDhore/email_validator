@@ -2,7 +2,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 def yahoo_check(email):
-    driver=webdriver.Chrome(ChromeDriverManager().install())
+    driver=webdriver.Chrome(".\webdriver\chromedriver.exe")
     driver.get('https://edit.yahoo.com/forgot?stage=fe100')
     driver.find_element('xpath','//*[@id="username"]').send_keys(email)
     driver.find_element('xpath','//*[@id="yid-challenge"]/form/div[2]/button').click()
