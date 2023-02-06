@@ -2,7 +2,6 @@ from flask_restful import Resource
 import re
 import smtplib
 import dns.resolver
-from .yahoo import yahoo_check
 
 class email_val(Resource):
     def get(self,email):
