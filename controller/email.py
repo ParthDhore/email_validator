@@ -19,7 +19,7 @@ class email_val(Resource):
         domain = str(splitAddress[1])
 
         if domain=='yahoo.com':
-            return "lol"
+            return "functionality removed"
 
         else:
             # MX record lookup
